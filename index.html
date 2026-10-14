@@ -65,38 +65,29 @@
     </div>
 
     <div class="grid">
-        <!-- Game 1: Infinite Craft (Clean Web Engine) -->
-        <div class="card" onclick="loadGame('https://infinitecraft.org')">
+        <!-- Module 1: Flappy Bird -->
+        <div class="card" onclick="loadGame('https://github.io')">
             <h3>Workspace 101</h3>
-            <p style="font-size: 12px; color:#aaa;">(Infinite Craft)</p>
+            <p style="font-size: 12px; color:#aaa;">(Flappy Bird)</p>
         </div>
-        <!-- Game 2: Poki Mirror (Direct Web Port) -->
-        <div class="card" onclick="loadGame('https://poki.github.io/')">
+        <!-- Module 2: 2048 Puzzle -->
+        <div class="card" onclick="loadGame('https://github.io')">
             <h3>Workspace 102</h3>
-            <p style="font-size: 12px; color:#aaa;">(Poki App Framework)</p>
+            <p style="font-size: 12px; color:#aaa;">(2048 Puzzle)</p>
         </div>
-        <!-- Game 3: Coolmath Games Emulator -->
-        <div class="card" onclick="loadGame('https://coolmath-games.github.io/')">
+        <!-- Module 3: Hextris Arcade -->
+        <div class="card" onclick="loadGame('https://github.io')">
             <h3>Workspace 103</h3>
-            <p style="font-size: 12px; color:#aaa;">(Coolmath Core)</p>
+            <p style="font-size: 12px; color:#aaa;">(Hextris)</p>
         </div>
-        <!-- Game 4: Geometry Dash (Clean HTML5 Port) -->
+        <!-- Module 4: Asteroids Engine -->
         <div class="card" onclick="loadGame('https://github.io')">
             <h3>Workspace 104</h3>
-            <p style="font-size: 12px; color:#aaa;">(Geometry Dash)</p>
-        </div>
-        <!-- Game 5: Retro Bowl -->
-        <div class="card" onclick="loadGame('https://github.io')">
-            <h3>Workspace 105</h3>
-            <p style="font-size: 12px; color:#aaa;">(Retro Bowl)</p>
-        </div>
-        <!-- Game 6: Basket Random -->
-        <div class="card" onclick="loadGame('https://github.io')">
-            <h3>Workspace 106</h3>
-            <p style="font-size: 12px; color:#aaa;">(Basket Random)</p>
+            <p style="font-size: 12px; color:#aaa;">(Asteroids)</p>
         </div>
     </div>
 
+    <!-- Hidden Game Player Box -->
     <div class="game-container" id="gameBox">
         <iframe id="gameFrame" src=""></iframe>
     </div>
@@ -108,7 +99,7 @@
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
         }
 
-        // Emergency Panic Switch
+        // Emergency Panic Switch (Instantly goes to Google)
         document.addEventListener('keydown', function(event) {
             if (event.key === 'p' || event.key === 'P') {
                 window.location.href = 'https://google.com';
