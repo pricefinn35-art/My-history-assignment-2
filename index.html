@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Drive - Shared Workspace</title> <!-- Tab title camouflage -->
+    <title>Google Drive - Shared Workspace</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,10 +15,7 @@
             flex-direction: column;
             align-items: center;
         }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+        .header { text-align: center; margin-bottom: 30px; }
         h1 { color: #4285F4; margin-bottom: 5px; }
         .notice { color: #888; font-size: 14px; }
         .grid {
@@ -68,39 +65,28 @@
     </div>
 
     <div class="grid">
-        <!-- Module 1: Infinite Craft -->
+        <!-- Game 1: Flappy Bird (Hosted entirely on GitHub code) -->
         <div class="card" onclick="loadGame('https://github.io')">
             <h3>Workspace 101</h3>
-            <p style="font-size: 12px; color:#aaa;">(Infinite Craft)</p>
+            <p style="font-size: 12px; color:#aaa;">(Flappy Bird)</p>
         </div>
-        <!-- Module 2: Poki (Unblocked Selection Mirror) -->
+        <!-- Game 2: 2048 Game -->
         <div class="card" onclick="loadGame('https://github.io')">
             <h3>Workspace 102</h3>
-            <p style="font-size: 12px; color:#aaa;">(Poki Games App)</p>
+            <p style="font-size: 12px; color:#aaa;">(2048 Puzzle)</p>
         </div>
-        <!-- Module 3: Coolmath Games Emulator Mirror -->
+        <!-- Game 3: Hextris -->
         <div class="card" onclick="loadGame('https://github.io')">
             <h3>Workspace 103</h3>
-            <p style="font-size: 12px; color:#aaa;">(Coolmath Arcade)</p>
+            <p style="font-size: 12px; color:#aaa;">(Hextris)</p>
         </div>
-        <!-- Module 4: Geometry Dash Full Game Mirror -->
-        <div class="card" onclick="loadGame('https://googleusercontent.com')">
+        <!-- Game 4: Asteroids Retro -->
+        <div class="card" onclick="loadGame('https://github.io')">
             <h3>Workspace 104</h3>
-            <p style="font-size: 12px; color:#aaa;">(Geometry Dash)</p>
-        </div>
-        <!-- Module 5: Retro Bowl -->
-        <div class="card" onclick="loadGame('https://googleusercontent.com')">
-            <h3>Workspace 105</h3>
-            <p style="font-size: 12px; color:#aaa;">(Retro Bowl)</p>
-        </div>
-        <!-- Module 6: Basket Random -->
-        <div class="card" onclick="loadGame('https://googleusercontent.com')">
-            <h3>Workspace 106</h3>
-            <p style="font-size: 12px; color:#aaa;">(Basket Random)</p>
+            <p style="font-size: 12px; color:#aaa;">(Asteroids Arcade)</p>
         </div>
     </div>
 
-    <!-- Hidden Game Player Box -->
     <div class="game-container" id="gameBox">
         <iframe id="gameFrame" src=""></iframe>
     </div>
@@ -112,10 +98,12 @@
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
         }
 
-        // Emergency Panic Switch to Google Search Homepage
         document.addEventListener('keydown', function(event) {
             if (event.key === 'p' || event.key === 'P') {
                 window.location.href = 'https://google.com';
             }
         });
     </script>
+
+</body>
+</html>
