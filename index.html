@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Drive - Shared Workspace</title> <!-- Fake title for browser tabs -->
+    <title>Google Drive - Shared Workspace</title> <!-- Tab title camouflage -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,7 +26,7 @@
             gap: 20px;
             flex-wrap: wrap;
             justify-content: center;
-            max-width: 800px;
+            max-width: 900px;
         }
         .card {
             background: #2d2d2d;
@@ -46,8 +46,8 @@
             display: none;
             margin-top: 30px;
             width: 100%;
-            max-width: 800px;
-            height: 600px;
+            max-width: 900px;
+            height: 650px;
             background: #000;
             border: 2px solid #4285F4;
             border-radius: 8px;
@@ -68,14 +68,34 @@
     </div>
 
     <div class="grid">
-        <!-- Module 1: Retro Bowl (Fixed URL) -->
+        <!-- Module 1: Infinite Craft -->
+        <div class="card" onclick="loadGame('https://github.io')">
+            <h3>Workspace 101</h3>
+            <p style="font-size: 12px; color:#aaa;">(Infinite Craft)</p>
+        </div>
+        <!-- Module 2: Poki (Unblocked Selection Mirror) -->
+        <div class="card" onclick="loadGame('https://github.io')">
+            <h3>Workspace 102</h3>
+            <p style="font-size: 12px; color:#aaa;">(Poki Games App)</p>
+        </div>
+        <!-- Module 3: Coolmath Games Emulator Mirror -->
+        <div class="card" onclick="loadGame('https://github.io')">
+            <h3>Workspace 103</h3>
+            <p style="font-size: 12px; color:#aaa;">(Coolmath Arcade)</p>
+        </div>
+        <!-- Module 4: Geometry Dash Full Game Mirror -->
         <div class="card" onclick="loadGame('https://googleusercontent.com')">
-            <h3>Workspace 1A</h3>
+            <h3>Workspace 104</h3>
+            <p style="font-size: 12px; color:#aaa;">(Geometry Dash)</p>
+        </div>
+        <!-- Module 5: Retro Bowl -->
+        <div class="card" onclick="loadGame('https://googleusercontent.com')">
+            <h3>Workspace 105</h3>
             <p style="font-size: 12px; color:#aaa;">(Retro Bowl)</p>
         </div>
-        <!-- Module 2: Basket Random (Fixed URL) -->
+        <!-- Module 6: Basket Random -->
         <div class="card" onclick="loadGame('https://googleusercontent.com')">
-            <h3>Workspace 2B</h3>
+            <h3>Workspace 106</h3>
             <p style="font-size: 12px; color:#aaa;">(Basket Random)</p>
         </div>
     </div>
@@ -86,20 +106,16 @@
     </div>
 
     <script>
-        // Function to launch the selected game frame
         function loadGame(url) {
             document.getElementById('gameBox').style.display = 'block';
             document.getElementById('gameFrame').src = url;
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
         }
 
-        // Panic Button Event: Redirects immediately if "P" is pressed
+        // Emergency Panic Switch to Google Search Homepage
         document.addEventListener('keydown', function(event) {
             if (event.key === 'p' || event.key === 'P') {
                 window.location.href = 'https://google.com';
             }
         });
     </script>
-
-</body>
-</html>
